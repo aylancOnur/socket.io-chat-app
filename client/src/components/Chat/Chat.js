@@ -1,24 +1,22 @@
-import React, { useState, useEffect } from "react";
-import queryString from 'query-string';
+import React, { useEffect, useState } from "react";
+import "./chat.css";
+import queryString from "query-string";
+import ChatLeft from "./ChatLeft/ChatLeft";
+import ChatRight from "./ChatRight/ChatRight";
+import { IconContext } from "react-icons";
 import io from "socket.io-client";
 
-import TextContainer from '../TextContainer/TextContainer';
-import Messages from '../Messages/Messages';
-import InfoBar from '../InfoBar/InfoBar';
-import Input from '../Input/Input';
-
-import './Chat.css';
-
-const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
+const ENDPOINT = "http://localhost:5000/";
 
 let socket;
 
 const Chat = ({ location }) => {
-  const [name, setName] = useState('');
-  const [room, setRoom] = useState('');
-  const [users, setUsers] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [room, setRoom] = useState("");
+  const [users, setUsers] = useState("");
+  const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
+  console.log("Messages =>", messages);
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -26,43 +24,50 @@ const Chat = ({ location }) => {
     socket = io(ENDPOINT);
 
     setRoom(room);
-    setName(name)
+    setName(name);
 
-    socket.emit('join', { name, room }, (error) => {
-      if(error) {
+    socket.emit("join", { name, room }, (error) => {
+      if (error) {
         alert(error);
       }
     });
   }, [ENDPOINT, location.search]);
-  
+
   useEffect(() => {
-    socket.on('message', message => {
-      setMessages(messages => [ ...messages, message ]);
+    socket.on("message", (message) => {
+      setMessages((messages) => [...messages, message]);
     });
-    
+    setMessages((messages) => [...messages, message]);
+
     socket.on("roomData", ({ users }) => {
       setUsers(users);
     });
-}, []);
+  }, []);
 
   const sendMessage = (event) => {
     event.preventDefault();
-
-    if(message) {
-      socket.emit('sendMessage', message, () => setMessage(''));
+    console.log("clicked", message);
+    if (message) {
+      socket.emit("sendMessage", message, () => setMessage(""));
     }
-  }
+  };
 
   return (
-    <div className="outerContainer">
+    <IconContext.Provider value={{ className: "icons" }}>
       <div className="container">
-          <InfoBar room={room} />
-          <Messages messages={messages} name={name} />
-          <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+        <div className="chat">
+          <ChatLeft />
+          <ChatRight
+            messages={messages}
+            name={name}
+            message={message}
+            setMessage={setMessage}
+            sendMessage={sendMessage}
+          />
+        </div>
       </div>
-      <TextContainer users={users}/>
-    </div>
+    </IconContext.Provider>
   );
-}
+};
 
 export default Chat;

@@ -1,19 +1,32 @@
-import React from 'react';
+import React from "react";
+import "./input.css";
+import { FiSend } from "react-icons/fi";
 
-import './Input.css';
+const Input = ({ message, setMessage, sendMessage }) => {
+  const handleChange = (e) => {
+    setMessage(e.target.value);
+  };
+  console.log("Message =>", message);
 
-const Input = ({ setMessage, sendMessage, message }) => (
-  <form className="form">
-    <input
-      className="input"
-      type="text"
-      placeholder="Type a message..."
-      value={message}
-      onChange={({ target: { value } }) => setMessage(value)}
-      onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
-    />
-    <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
-  </form>
-)
+  return (
+    <form className="message__border" onSubmit={(e) => e.preventDefault()}>
+      <input
+        value={message}
+        className="message__input"
+        type="text"
+        onChange={handleChange}
+        onKeyPress={(event) =>
+          event.key === "Enter" ? sendMessage(event) : null
+        }
+      />
+      <FiSend>
+        <button
+          className="message__send"
+          onClick={(e) => sendMessage(e)}
+        ></button>
+      </FiSend>
+    </form>
+  );
+};
 
 export default Input;
