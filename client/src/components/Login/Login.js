@@ -11,23 +11,29 @@ const Login = () => {
   };
   return (
     <form className="login" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Name"
-        onChange={(event) => setName(event.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Room"
-        onChange={(event) => setRoom(event.target.value)}
-      />
-      <Link
-        onClick={(e) => (!name || !room ? e.preventDefault() : null)}
-        to={`/chat?name=${name}&room=${room}`}
-      >
-        <button className="login__button">Login</button>
-      </Link>
-    </form>
+        <h2>Log In</h2>
+        <input
+          type="text"
+          placeholder="Name"
+          className="login__input"
+          onChange={(event) => setName(event.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Room"
+          className="login__input"
+          onChange={(event) => setRoom(event.target.value)}
+        />
+        {/* div added */}
+        <div>
+          <Link
+            onClick={(e) => (!name || !room ? e.preventDefault() : null)}
+            to={`/chat?name=${name}&room=${room}`}
+          >
+            <button className="login__button">Log In</button>
+          </Link>
+        </div>
+      </form>
   );
 };
 

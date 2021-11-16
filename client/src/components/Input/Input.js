@@ -6,7 +6,6 @@ const Input = ({ message, setMessage, sendMessage }) => {
   const handleChange = (e) => {
     setMessage(e.target.value);
   };
-  console.log("Message =>", message);
 
   return (
     <form className="message__border" onSubmit={(e) => e.preventDefault()}>
@@ -14,6 +13,7 @@ const Input = ({ message, setMessage, sendMessage }) => {
         value={message}
         className="message__input"
         type="text"
+        autoFocus 
         onChange={handleChange}
         onKeyPress={(event) =>
           event.key === "Enter" ? sendMessage(event) : null

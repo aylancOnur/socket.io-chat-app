@@ -28,7 +28,8 @@
 
 .chat__top {
   display: flex;
-  flex: 10%;
+  /*flex: 10%;*/
+  margin-bottom: 1.5rem;
 }
 
 .chat__top-h3 {
@@ -41,8 +42,11 @@
 
 .chat__hr {
   width: 100%;
-  color: rgba(168, 168, 168, 0.2);
+  background-color:rgba(149, 149, 149, 0.4);
   margin-top: 1rem;
+  min-height: 0.25rem;
+  border: none;
+  border-radius: 0.12rem;
 }
 
 .users {
@@ -67,7 +71,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
 }
 
 .users__card-left {
@@ -97,6 +101,21 @@
   height: auto;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f131;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(170, 170, 170, 0.5);
+  border-radius: 0.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .chat__left {
     display: none;
@@ -112,4 +131,10 @@
     margin: 0 auto;
     grid-template-columns: 1fr;
   }
+
+  .chat__hr {
+    margin-top: 0.5rem;
+    min-height: 0.2rem;
+  }
+
 }

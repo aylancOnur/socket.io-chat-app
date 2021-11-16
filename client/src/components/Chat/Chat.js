@@ -6,7 +6,7 @@ import ChatRight from "./ChatRight/ChatRight";
 import { IconContext } from "react-icons";
 import io from "socket.io-client";
 
-const ENDPOINT = "http://localhost:5000/";
+const ENDPOINT = "https://reactsocket-io.herokuapp.com/";
 
 let socket;
 
@@ -16,7 +16,6 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  console.log("Messages =>", messages);
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -46,7 +45,6 @@ const Chat = ({ location }) => {
 
   const sendMessage = (event) => {
     event.preventDefault();
-    console.log("clicked", message);
     if (message) {
       socket.emit("sendMessage", message, () => setMessage(""));
     }
@@ -56,7 +54,7 @@ const Chat = ({ location }) => {
     <IconContext.Provider value={{ className: "icons" }}>
       <div className="container">
         <div className="chat">
-          <ChatLeft />
+          <ChatLeft users={users} />
           <ChatRight
             messages={messages}
             name={name}
