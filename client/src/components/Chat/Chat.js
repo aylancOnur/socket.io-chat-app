@@ -61,6 +61,7 @@ const Chat = ({ location }) => {
             message={message}
             setMessage={setMessage}
             sendMessage={sendMessage}
+            users={users}
           />
         </div>
       </div>

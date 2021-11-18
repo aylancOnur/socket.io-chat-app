@@ -13,17 +13,14 @@ const Input = ({ message, setMessage, sendMessage }) => {
         value={message}
         className="message__input"
         type="text"
-        autoFocus 
+        autoFocus
         onChange={handleChange}
         onKeyPress={(event) =>
           event.key === "Enter" ? sendMessage(event) : null
         }
       />
-      <FiSend>
-        <button
-          className="message__send"
-          onClick={(e) => sendMessage(e)}
-        ></button>
+      <FiSend onClick={(e) => sendMessage(e)}>
+        <button className="message__send"></button>
       </FiSend>
     </form>
   );

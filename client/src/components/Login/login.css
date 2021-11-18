@@ -1,5 +1,5 @@
-*{
-  font-family: 'Montserrat', 'sans-serif';
+* {
+  font-family: "Montserrat", "sans-serif";
 }
 
 .login {
@@ -17,7 +17,7 @@
   border-radius: 1rem;
 }
 
-h2{
+h2 {
   font-size: 3rem;
   margin-bottom: 4rem;
   letter-spacing: 1.5px;
@@ -27,13 +27,12 @@ h2{
   margin-bottom: 2rem;
 }
 
-.login__icons{
+.login__icons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-
 
 .login__button {
   width: 12rem;
@@ -47,7 +46,7 @@ h2{
   font-weight: 500;
 }
 
-.login__button:hover{
+.login__button:hover {
   border: none;
   cursor: pointer;
   background-color: white;
@@ -73,3 +72,8 @@ input[type="text"].login__input:focus {
   transition: 0.4s;
 }
 
+@media screen and (max-width: 768px) {
+  .login {
+    width: 90%;
+  }
+}
