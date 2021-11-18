@@ -8,10 +8,10 @@ const ChatLeft = ({ users }) => {
     <div className="chat__left">
       <div className="users__card">
         <div className="users__card-left">
-            <BiMessageAltDetail />
+          <BiMessageAltDetail />
           <h3 className="users__card-heading">Active Users</h3>
         </div>
-        <Link to="/" style={{width: "auto"}}>
+        <Link to="/" style={{ width: "auto" }}>
           <BiLogOut />
         </Link>
       </div>
@@ -29,7 +29,7 @@ const ChatLeft = ({ users }) => {
             <img className="online-icon" src={onlineIcon} alt="online-icon" />
           </div>
         ))}
-      <hr />
+      <hr className="chat__left-hr" />
     </div>
   );
 };
