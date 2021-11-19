@@ -2,16 +2,17 @@
 
 ![](./app-gif.gif)
 
+🌍 Canlı URL | Live URL: <a href="https://wazzupchat.netlify.app/" target="_blank">https://wazzupchat.netlify.app/</a>
+
 ## 🇹🇷 [README (TR)](#readme-tr)
 ## Genel Bakış
-- [Proje Hakkında](#proje-hakkında)
-- [Proje İçeriği](#proje-içeriği)
-- - [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
-- - [Ekran Görüntüleri](#ekran-görüntüleri)
-- - [Canlı URL](#canlı-url)
+- [Proje Hakkında](#proje-hakkinda)
+- [Proje İçeriği](#proje-icerigi)
+- - [Kullanılan Teknolojiler](#kullanilan-teknolojiler)
+- - [Ekran Görüntüleri](#ekran-goruntuleri)
 - [Kurulum](#kurulum)
-- [Kullanılan Kaynaklar](#kullanılan-kaynaklar)
-- [Katkıda Bulunanlar](#katkıda-bulunanlar)
+- [Kullanılan Kaynaklar](#kullanilan-kaynaklar)
+- [Katkıda Bulunanlar](#katkida-bulunanlar)
 
 ## 🇬🇧 [README (EN)](#readme-en)
 ## Overview
@@ -19,20 +20,19 @@
 - [Content of the Project](#content-of-the-project)
 - - [Used Technologies](#used-technologies)
 - - [Screenshots](#screenshots)
-- - [Live URL](#live-url)
-- [Installation](#installations)
+- [Installation](#installation)
 - [Used Sources](#used-sources)
 - [Contributors](#contributors)
 
 
-## 🇹🇷 README (TR)
-## ℹ Proje Hakkında
+## 🇹🇷 README (TR)<a name="readme-tr">
+## ℹ Proje Hakkında <a name="proje-hakkinda">
 
 [Kodluyoruz](https://www.kodluyoruz.org/)'un **Proje Fabrikası** etkinliği kapsamında **WhazzUp Chat** adlı bir sohbet uygulaması geliştirdik. Geliştirdiğimiz uygulama kullanıcılara bir sohbet odası sunar. Kullanıcılar adlarını ve girmek istedikleri odanın adını yazarak bir sohbet odasına bağlanabilirler ve aynı odadaki diğer kullanıcılarla mesajlaşabilirler. Kullanıcı sayfayı yenileyince veya sohbet odasından ayrılınca bütün mesajlar silinir.
 
-## 📝 Proje İçeriği
+## 📝 Proje İçeriği <a name="proje-icerigi">
 
-### <img width="24px" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png"> Kullanılan Teknolojiler 
+### <img width="24px" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png"> Kullanılan Teknolojiler <a name="kullanilan-teknolojiler">
 
 <p>
 <a href="https://reactjs.org/" target="_blank">
@@ -50,7 +50,7 @@
 </a>
 </p>
 
-### 📸 Ekran Görüntüleri
+### 📸 Ekran Görüntüleri <a name="ekran-goruntuleri">
 
 ![Ekran Görüntüsü](./screenshot-login-desktop.png)
 ![Ekran Görüntüsü](./screenshot-chat-desktop.png)
@@ -63,11 +63,8 @@
 
 **Mobil ekran görüntüleri**
 
-### 🌍 Canlı URL
 
-Projemizin canlı versiyonunu <a href="https://wazzupchat.netlify.app/" target="_blank">buradan </a> inceleyebilirsiniz.
-
-## 💻 Kurulum
+## 💻 Kurulum <a name="kurulum">
 
 Projeyi çalıştırmak için bilgisayarınızda <a href="https://nodejs.org/en/" target="_blank">Node.JS</a> yüklü olmalıdır. Projeyi bilgisayarınıza indirdiğinizde önce sunucu (server-side) tarafını sonra istemci (client-side) tarafını çalıştırmanız gerekmektedir.
 
@@ -84,11 +81,11 @@ Projeyi çalıştırmak için bilgisayarınızda <a href="https://nodejs.org/en/
 3. `cd client` yazarak `client` klasörüne erişin.
 4. `npm start` yazarak projeyi çalıştırın.
 
-## 📚 Kullanılan Kaynaklar
+## 📚 Kullanılan Kaynaklar <a name="kullanilan-kaynaklar">
 
 Bu uygulamanın sunucu tarafı oluştururken <a href="https://github.com/adrianhajdin/project_chat_application" target="_blank">buradaki</a> repository'den yararlandık.
 
-## ✍ Katkıda Bulunanlar
+## ✍ Katkıda Bulunanlar <a name="katkida-bulunanlar">
 
 <img src="https://c.tenor.com/FjenEi239_sAAAAC/tonton-tobi.gif" width="400" alt="Tonton Tobi GIF - Tonton Tobi Working GIFs" style="max-width: 690px;">
 
@@ -110,15 +107,15 @@ Eğer proje hakkında bir öneriniz varsa veya herhangi bir sorun fark ettiyseni
 
 ---
 
-## 🇬🇧 README (EN)
+## 🇬🇧 README (EN) <a name="readme-en">
 
-## ℹ About Project
+## ℹ About Project <a name="about-project">
 
 We developed a chat app called **WhazzUp Chat** in the scope of **Project Factory** event of [Kodluyoruz](https://www.kodluyoruz.org/). The app we developed provides users a chat room. Users can connect a chat room by typing their name and room's name they want and chat with other users in the same room. All messages are deleted when user refreshes the page or leaves the chat room.
 
-## 📝 Content of the Project
+## 📝 Content of the Project <a name="content-of-the-project">
 
-### <img width="24px" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png"> Used Technologies
+### <img width="24px" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png"> Used Technologies <a name="used-technologies">
 
 <p>
 <a href="https://reactjs.org/" target="_blank">
@@ -136,7 +133,7 @@ We developed a chat app called **WhazzUp Chat** in the scope of **Project Factor
 </a>
 </p>
 
-### 📸 Screenshots
+### 📸 Screenshots <a name="screenshots">
 
 ![Screenshot](./screenshot-login-desktop.png)
 
@@ -150,12 +147,8 @@ We developed a chat app called **WhazzUp Chat** in the scope of **Project Factor
 
 **Mobile screenshots**
 
-
-### 🌍 Live URL
-
-You can check out our project's live version from <a href="https://wazzupchat.netlify.app/" target="_blank">here</a>.
-
-## 💻 Installation
+  
+## 💻 Installation <a name="installation">
 
 <a href="https://nodejs.org/en/" target="_blank">Node.JS</a> must be installed on your computer to run this project. First, you need to run the server-side  Projeyi bilgisayarınıza indirdiğinizde önce sunucu (server-side) tarafını sonra istemci (client-side) tarafını çalıştırmanız gerekmektedir.
 
@@ -172,11 +165,11 @@ You can check out our project's live version from <a href="https://wazzupchat.ne
 3. Reach `client` folder by typing `cd client`.
 4. Run the project by typing `npm start`.
 
-## 📚 Used Sources
+## 📚 Used Sources <a name="used-sources">
 
 We used <a href="https://github.com/adrianhajdin/project_chat_application" target="_blank">this repository</a> while creating the server-side of our project.
 
-## ✍ Contributors
+## ✍ Contributors <a name="contributors">
 
 <img src="https://c.tenor.com/FjenEi239_sAAAAC/tonton-tobi.gif" width="400" alt="Tonton Tobi GIF - Tonton Tobi Working GIFs" style="max-width: 690px;">
 
