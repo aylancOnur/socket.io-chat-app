@@ -1,4 +1,4 @@
-# 💬 WhazzUp Chat | Kodluyoruz Proje Fabrikası
+# 💬 WazzUp Chat | Kodluyoruz Proje Fabrikası
 
 ![](./app-gif.gif)
 
