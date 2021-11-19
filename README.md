@@ -1,18 +1,197 @@
-# Realtime Chat Application
+# 💬 WhazzUp Chat | Kodluyoruz Proje Fabrikası
 
-### [Live Site](https://realtime-chat-application.netlify.com)
+![](./app-gif.gif)
 
-![Chat Application](https://i.ytimg.com/vi/ZwFA3YMfkoc/maxresdefault.jpg)
+## 🇹🇷 [README (TR)](#readme-tr)
+## Genel Bakış
+- [Proje Hakkında](#proje-hakkında)
+- [Proje İçeriği](#proje-içeriği)
+- - [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- - [Ekran Görüntüleri](#ekran-görüntüleri)
+- - [Canlı URL](#canlı-url)
+- [Kurulum](#kurulum)
+- [Kullanılan Kaynaklar](#kullanılan-kaynaklar)
+- [Katkıda Bulunanlar](#katkıda-bulunanlar)
 
-## Introduction
-This is a code repository for the corresponding video tutorial. 
+## 🇬🇧 [README (EN)](#readme-en)
+## Overview
+- [About Project](#about-project)
+- [Content of the Project](#content-of-the-project)
+- - [Used Technologies](#used-technologies)
+- - [Screenshots](#screenshots)
+- - [Live URL](#live-url)
+- [Installation](#installations)
+- [Used Sources](#used-sources)
+- [Contributors](#contributors)
 
-In this video, we will create a full Realtime Chat Application. We're going to use  React on the front end, with NodeJS + Socket.io web socket library on the back end. 
 
-By the end of this video, you will have a strong understanding of how to send and receive messages using web sockets and Socket.io to make any real-time application.
+## 🇹🇷 README (TR)
+## ℹ Proje Hakkında
 
-## Stay up to date with new projects
-New major projects coming soon, subscribe to the mailing list to stay up to date https://javascriptmastery.eo.page/mailing-list.
+[Kodluyoruz](https://www.kodluyoruz.org/)'un **Proje Fabrikası** etkinliği kapsamında **WhazzUp Chat** adlı bir sohbet uygulaması geliştirdik. Geliştirdiğimiz uygulama kullanıcılara bir sohbet odası sunar. Kullanıcılar adlarını ve girmek istedikleri odanın adını yazarak bir sohbet odasına bağlanabilirler ve aynı odadaki diğer kullanıcılarla mesajlaşabilirler. Kullanıcı sayfayı yenileyince veya sohbet odasından ayrılınca bütün mesajlar silinir.
 
-Setup:
-- run ```npm i && npm start``` for both client and server side to start the development server
+## 📝 Proje İçeriği
+
+### <img width="24px" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png"> Kullanılan Teknolojiler 
+
+<p>
+<a href="https://reactjs.org/" target="_blank">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> 
+</a> 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+</a>
+
+<a href="https://nodejs.org/en/" target="_blank">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+</a>
+<a href="https://socket.io/" target="_blank">
+<img src="https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white" />
+</a>
+</p>
+
+### 📸 Ekran Görüntüleri
+
+![Ekran Görüntüsü](./screenshot-login-desktop.png)
+![Ekran Görüntüsü](./screenshot-chat-desktop.png)
+
+**Masaüstü ekran görüntüleri**
+
+![Ekran Görüntüsü](./screenshot-login-mobile.png)
+
+![Ekran Görüntüsü](./screenshot-chat-mobile.png)
+
+**Mobil ekran görüntüleri**
+
+### 🌍 Canlı URL
+
+Projemizin canlı versiyonunu <a href="https://wazzupchat.netlify.app/" target="_blank">buradan </a> inceleyebilirsiniz.
+
+## 💻 Kurulum
+
+Projeyi çalıştırmak için bilgisayarınızda <a href="https://nodejs.org/en/" target="_blank">Node.JS</a> yüklü olmalıdır. Projeyi bilgisayarınıza indirdiğinizde önce sunucu (server-side) tarafını sonra istemci (client-side) tarafını çalıştırmanız gerekmektedir.
+
+**Sunucu tarafının kurulumu için:**
+
+1. Dosyayı indirdikten sonra komut satırını açarak dosyanın konumunu girin.
+2. `cd server` yazarak `server` klasörüne erişin.
+3. `npm start` yazarak sunucuyu ayağa kaldırın.
+
+**İstemci tarafının kurulumu için:**
+
+1. Sunucuyu ayağa kaldırdıktan sonra proje klasörünü kod editöründe açın.
+2. Terminal kısmına `npm i` yazarak projenin *dependency*'lerini indirin.
+3. `cd client` yazarak `client` klasörüne erişin.
+4. `npm start` yazarak projeyi çalıştırın.
+
+## 📚 Kullanılan Kaynaklar
+
+Bu uygulamanın sunucu tarafı oluştururken <a href="https://github.com/adrianhajdin/project_chat_application" target="_blank">buradaki</a> repository'den yararlandık.
+
+## ✍ Katkıda Bulunanlar
+
+<img src="https://c.tenor.com/FjenEi239_sAAAAC/tonton-tobi.gif" width="400" alt="Tonton Tobi GIF - Tonton Tobi Working GIFs" style="max-width: 690px;">
+
+**Özge Demiryol**
+<p>
+<a href="https://linkedin.com/in/ozge-demiryol" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://github.com/ozge-demiryol" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
+
+**Onur Aylanç**
+<p>
+<a href="https://www.linkedin.com/in/onur-aylanc/" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://github.com/aylancOnur"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
+
+**Müzeyyen Nur Akçay**
+
+Eğer proje hakkında bir öneriniz varsa veya herhangi bir sorun fark ettiyseniz lütfen bizimle iletişime geçiniz.
+
+---
+
+## 🇬🇧 README (EN)
+
+## ℹ About Project
+
+We developed a chat app called **WhazzUp Chat** in the scope of **Project Factory** event of [Kodluyoruz](https://www.kodluyoruz.org/). The app we developed provides users a chat room. Users can connect a chat room by typing their name and room's name they want and chat with other users in the same room. All messages are deleted when user refreshes the page or leaves the chat room.
+
+## 📝 Content of the Project
+
+### <img width="24px" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png"> Used Technologies
+
+<p>
+<a href="https://reactjs.org/" target="_blank">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> 
+</a> 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+</a>
+
+<a href="https://nodejs.org/en/" target="_blank">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+</a>
+<a href="https://socket.io/" target="_blank">
+<img src="https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white" />
+</a>
+</p>
+
+### 📸 Screenshots
+
+![Screenshot](./screenshot-login-desktop.png)
+
+![Screenshot](./screenshot-chat-desktop.png)
+
+**Desktop screenshots**
+
+![Screenshot](./screenshot-login-mobile.png)
+
+![Screenshot](./screenshot-chat-mobile.png)
+
+**Mobile screenshots**
+
+
+### 🌍 Live URL
+
+You can check out our project's live version from <a href="https://wazzupchat.netlify.app/" target="_blank">here</a>.
+
+## 💻 Installation
+
+<a href="https://nodejs.org/en/" target="_blank">Node.JS</a> must be installed on your computer to run this project. First, you need to run the server-side  Projeyi bilgisayarınıza indirdiğinizde önce sunucu (server-side) tarafını sonra istemci (client-side) tarafını çalıştırmanız gerekmektedir.
+
+**For installation of the server-side:**
+
+1. Type the project folder's path in command prompt after downloading the project.
+2. Reach `server` folder by typing `cd server`.
+3. Start the server by typing `npm start`.
+
+**For installation of the client-side:**
+
+1. After starting the server, open the project folder in your code editor.
+2. Download all dependencies of the project by typing `npm i` in terminal.
+3. Reach `client` folder by typing `cd client`.
+4. Run the project by typing `npm start`.
+
+## 📚 Used Sources
+
+We used <a href="https://github.com/adrianhajdin/project_chat_application" target="_blank">this repository</a> while creating the server-side of our project.
+
+## ✍ Contributors
+
+<img src="https://c.tenor.com/FjenEi239_sAAAAC/tonton-tobi.gif" width="400" alt="Tonton Tobi GIF - Tonton Tobi Working GIFs" style="max-width: 690px;">
+
+**Özge Demiryol**
+<p>
+<a href="https://linkedin.com/in/ozge-demiryol" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://github.com/ozge-demiryol" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
+
+**Onur Aylanç**
+<p>
+<a href="https://www.linkedin.com/in/onur-aylanc/" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://github.com/aylancOnur"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
+
+**Müzeyyen Nur Akçay**
+
+Please contact us if you noticed any problems or have any suggestion about the project.
