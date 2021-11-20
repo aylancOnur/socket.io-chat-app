@@ -2,7 +2,7 @@
 
 ![](./app-gif.gif)
 
-🌍 Canlı URL | Live URL: <a href="https://wazzupchat.netlify.app/" target="_blank">https://wazzupchat.netlify.app/</a>
+🌍 **Canlı URL | Live URL:** <a href="https://wazzupchat.netlify.app/" target="_blank">https://wazzupchat.netlify.app/</a>
 
 ## 🇹🇷 [README (TR)](#readme-tr)
 ## Genel Bakış
@@ -102,6 +102,11 @@ Bu uygulamanın sunucu tarafı oluştururken <a href="https://github.com/adrianh
 </p>
 
 **Müzeyyen Nur Akçay**
+  
+<p>
+<a href="https://www.linkedin.com/in/m%C3%BCzeyyen-nur-ak%C3%A7ay-659b21205" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://github.com/muzeyyen55"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
 
 Eğer proje hakkında bir öneriniz varsa veya herhangi bir sorun fark ettiyseniz lütfen bizimle iletişime geçiniz.
 
@@ -150,7 +155,7 @@ We developed a chat app called **WhazzUp Chat** in the scope of **Project Factor
   
 ## 💻 Installation <a name="installation">
 
-<a href="https://nodejs.org/en/" target="_blank">Node.JS</a> must be installed on your computer to run this project. First, you need to run the server-side  Projeyi bilgisayarınıza indirdiğinizde önce sunucu (server-side) tarafını sonra istemci (client-side) tarafını çalıştırmanız gerekmektedir.
+<a href="https://nodejs.org/en/" target="_blank">Node.JS</a> must be installed on your computer to run this project. You need to run the server-side first and then need to run client-side when you download the file to your computer.
 
 **For installation of the server-side:**
 
@@ -186,5 +191,10 @@ We used <a href="https://github.com/adrianhajdin/project_chat_application" targe
 </p>
 
 **Müzeyyen Nur Akçay**
+  
+<p>
+<a href="https://www.linkedin.com/in/m%C3%BCzeyyen-nur-ak%C3%A7ay-659b21205" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://github.com/muzeyyen55"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
 
 Please contact us if you noticed any problems or have any suggestion about the project.
